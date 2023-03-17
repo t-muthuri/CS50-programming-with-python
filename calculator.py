@@ -4,5 +4,7 @@
 
 x = float(input ("What's x? "))
 y = float(input ("What's y? "))
-print (f"{round (x + y):,}")
+print (f"{(x / y):.2f}")
+
+# print (f"{round (x / y, 2)}")
 # print (z)
