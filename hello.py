@@ -2,11 +2,13 @@
 name = input ( "What's your name? ")
 
 #say hello to the person
+# print (f"Hello, {name}")
 # print ( "Hello, ", end="")
-print ( "Hello,", name, sep=" ")
+# print ( "Hello,", name, sep=" ")
 
 # print (name)
 # print(*objects, sep=' ', end='\n', file=None, flush=False)
+
 
 """
 why we use comments:
