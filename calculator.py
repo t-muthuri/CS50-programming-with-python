@@ -1,10 +1,9 @@
-# x = int (input ("What's x?"))
-# y = int (input ("What's y?"))
-# print (x+y)
+def main():
+    x = int(input("What's x? "))
+    print ("x squared is", square(x))
 
-x = float(input ("What's x? "))
-y = float(input ("What's y? "))
-print (f"{(x / y):.2f}")
+def square(n):
+    return pow(n, 2)
+    # return n * n
 
-# print (f"{round (x / y, 2)}")
-# print (z)
+main()
