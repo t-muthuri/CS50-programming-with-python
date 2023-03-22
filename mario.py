@@ -1,16 +1,7 @@
-# stack the blocks 
-# method #1
-# print("#\n" *3, sep="")
-
-# method #2
-# for _ in range(3):
-#     print("#")
-
-# method #3
 def main():
-    print_column(3)
+    print_row(4)
 
-def print_column(height):
-    print("#\n" * height, end="")
+def print_row(width):
+    print("?" * width)
 
 main()
