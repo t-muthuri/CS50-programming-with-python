@@ -1,14 +1,21 @@
 class Student:
-    def __init__(self, name, house): #instance variables to objects
-        if not name:
-            raise ValueError("Missing name")
-        self.name = name #instance variable
+    def __init__(self, name, house):
+        self.name = name 
         self.house = house
     
     def __str__(self):
         return f"{self.name} from {self.house}"
     
-    #getter-function that gets a value
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("Missing name")
+        self._name = name
+        
     @property
     def house(self):
         return self._house #underscore to differentiate between the instance variables and the setter
