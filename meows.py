@@ -1,4 +1,5 @@
-def meow(n: int):
+def meow(n: int) -> str:
+    """Meow n times."""
     return "meow\n" * n
 
 
